@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado SENAI</title>
+    <link rel="stylesheet" href="/static/css/compras.css">
+</head>
+<body>
+    <div class="header">
+        <h1>MERCADO SENAI</h1>
+    </div>
+    
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-header">
+                <img src="{{ url_for('static', filename='img/bombom.jpeg') }}" alt="Bombom">
+            </div>
+            <div class="card-footer">
+                <form action="/compra_realizada">
+                    <button class="button">Comprar</button>
+                </form>
+                <button class="button">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-header">
+                <img src="{{ url_for('static', filename='img/leite.jpeg') }}" alt="Leite">
+            </div>
+            <div class="card-footer">
+                <form action="/compra_realizada">
+                    <button class="button">Comprar</button>
+                </form>
+                <button class="button">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="card-header">
+                <img src="{{ url_for('static', filename='img/cafe.jpeg') }}" alt="Café">
+            </div>
+            <div class="card-footer">
+                <form action="/compra_realizada">
+                    <button class="button">Comprar</button>
+                </form>
+                <button class="button">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="card-header">
+                <img src="{{ url_for('static', filename='img/nescau.jpeg') }}" alt="Nescau">
+            </div>
+            <div class="card-footer">
+                <form action="/compra_realizada">
+                    <button class="button">Comprar</button>
+                </form>
+                <button class="button">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <div class="card-header">
+                <img src="{{ url_for('static', filename='img/farinha.jpeg') }}" alt="Farinha">
+            </div>
+            <div class="card-footer">
+                <form action="/compra_realizada">
+                    <button class="button">Comprar</button>
+                </form>
+                <button class="button">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

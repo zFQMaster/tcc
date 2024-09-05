@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado SENAI</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado SENAI</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='img/marca.png') }}" alt=""> 
+        <h1>Mercado SENAI</h1>
+        <form action="/cliente">
+            <button type="submit">Login Cliente</button>
+        </form>
+        <form action="/login_admin">
+            <button type="submit">Login Administrador</button>
+        </form>
+    </div>
+</body>
+</html>
+
+</html>

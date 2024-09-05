@@ -1,0 +1,76 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #ECEFDA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  background-color: #2272a4;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+  background-color: #ecefda;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse o card */
+}
+
+.card-header img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ajusta a imagem sem distorcer */
+}
+
+.card-footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+.button {
+  background-color: #0b3a70;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #084b60;
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: 100%;
+      max-width: 300px; /* Ajusta o máximo de largura dos cards em telas menores */
+  }
+}
